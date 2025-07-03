@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 import db
 import dashboard
+import gui
 
 def login():
     usuario = entry_usuario.get()
@@ -36,3 +37,5 @@ tk.Button(root, text="Iniciar sesión", command=login).grid(row=2, column=0)
 tk.Button(root, text="Registrarse", command=registrar).grid(row=2, column=1)
 
 root.mainloop()
+
+# El archivo gui.py se encarga de todo al ser importado
